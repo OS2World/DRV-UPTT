@@ -1,0 +1,31 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: uptt.zip
+       Short Description: UPTime Test driver
+        Long Description:       
+        UPTime Test driver can be used for changing milliseconds  counter in
+global information segment structure (gis), those thing   
+that wraps every 49 days of uptime and what is get via DosQuerySysInfo(QSV_MS_COUNT
+and what go.exe shows as uptime. Test shows how DosSleep suxxes at 49 day of uptime.
+
+      Proposed directory
+           for placement: os2/dev/util
+
+               Your name: Evgeny Kotsuba 
+           Email address: 
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none) 
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: OS/2 v4, eCS
+ Additional requirements: 
+
+                Replaces: (none)
+
+
+

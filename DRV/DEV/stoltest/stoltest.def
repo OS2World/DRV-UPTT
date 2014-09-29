@@ -1,0 +1,35 @@
+; -------------------------------------------------------------------------
+; Dynamic link library providing inp, outp, inpw, outpw to CSET/2
+;
+; This definition module defines the exports available in the .DLL file
+; to be created.  This is the "safe" way to use inp/outp since the code
+; is physically separated, and only this DLL is given IOPL priveleges.
+;
+; To data, I have not figured out how to specify the SEGMENT of an
+; assembly language program with alternate attributes through the
+; .DEF module.  However, using "CODE IOPL", the IOPL priveleges can
+; be granted to all segments.  If necessary, the privelege can be taken
+; away from all other segments (not necessary here since portio.asm is
+; the only module).
+;
+; Explanation of some statements
+;
+; LIBRARY PORTIO                  Name of DLL (MUST match real name)
+; CODE PRELOAD EXECUTEONLY IOPL   Default IOPL in segments of class CODE
+;                                 Might as well preload since it is so
+;                                 small, but mark execute only.
+; PROTMODE                        This is a protect mode program only
+; EXPORTS                         List of names exported by the DLL
+; @inp                            External name of a _Far16 _Fastcall inp()
+; ...
+;
+; For some reason, the @ must be aligned in column 1 of this file.  Who
+; understands all the subleties of the compiler/linkers?
+; ---------------------------------------------------------------------------
+SEGMENTS INOUTP IOPL
+
+IMPORTS
+INOUTP.INPORT
+INOUTP.OUTPORT
+INOUTP.INPORTW
+INOUTP.OUTPORTW

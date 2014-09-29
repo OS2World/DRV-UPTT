@@ -1,0 +1,13 @@
+devdebug.h(133): Warning! W005: col(10) pointer or reference truncated
+devdebug.h(133): Note! N393: col(10) included from debug.c(36)
+devdebug.h(133): Note! N638: col(10) 'COMBase' defined in: devdebug.h(95) (col 8)
+devdebug.h(133): Note! N630: col(10) source conversion type is 'COMBase __far (lvalue)'
+devdebug.h(133): Note! N631: col(10) target conversion type is 'COMBase const (lvalue)'
+devdebug.h(140): Warning! W005: col(10) pointer or reference truncated
+devdebug.h(140): Note! N638: col(10) 'COMWidth' defined in: devdebug.h(96) (col 8)
+devdebug.h(140): Note! N630: col(10) source conversion type is 'COMWidth __far (lvalue)'
+devdebug.h(140): Note! N631: col(10) target conversion type is 'COMWidth const (lvalue)'
+devdebug.h(147): Warning! W005: col(10) pointer or reference truncated
+devdebug.h(147): Note! N638: col(10) 'COMMask' defined in: devdebug.h(97) (col 8)
+devdebug.h(147): Note! N630: col(10) source conversion type is 'COMMask __far (lvalue)'
+devdebug.h(147): Note! N631: col(10) target conversion type is 'COMMask const (lvalue)'
